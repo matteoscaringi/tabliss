@@ -24,9 +24,9 @@ type Cache = RotatingCache<Image>;
 export type Props = API<Data, Cache>;
 
 export const defaultData: Data = {
-  by: 'official',
+  by: 'search',
   collections: '',
-  featured: false,
-  search: '',
-  timeout: 900,
+  featured: true,
+  search: 'mountain range',
+  timeout: 0,
 };

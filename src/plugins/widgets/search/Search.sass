@@ -2,19 +2,56 @@
     display: block
     position: relative
 
-    input
+    width: 70px;
+    height: 70px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    background: white;
+    border-radius: 50%;
+
+    transition: 0.2s;
+    color: white;
+    box-shadow: 2px 2px rgba(0,0,0,0.1)
+
+    &:hover, &.open
+        width: 100%;
+        border-radius: 12px;
+        color: #474747;
+
+        input
+            width: 100%;
+        
+        i
+            opacity: 0;
+    
+
+
+    i   
+        position: absolute;
+        opacity: 1;
+        
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        transition: 0.2s;
+        pointer-events: none;
+
+
+    input 
+        width: 0px;
+        border: none;
+
+        height: 70px;
+        line-height: 70px;
+
         background-color: transparent
-        border: 0
         font-family: inherit
         font-size: 1.1em
         outline: none
         padding: 0.15em 0
         text-align: center
         text-shadow: inherit
-
-    > input
-        margin: 1rem 0
-        width: 100%
-        border-bottom-style: solid
-        border-bottom-width: 2px
 

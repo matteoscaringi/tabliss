@@ -4,6 +4,6 @@ import gradient from './gradient';
 import image from './image';
 import unsplash from './unsplash';
 
-export const backgroundConfigs = [colour, giphy, gradient, image, unsplash];
+export const backgroundConfigs = [unsplash, colour, giphy, gradient, image];
 
 backgroundConfigs.sort((a, b) => a.name.localeCompare(b.name));

@@ -31,14 +31,6 @@ const UnsplashCredit: FC<Props> = ({ image }) => (
     >
       {image.user_name}
     </a>
-    {' / '}
-    <a
-      href={'https://unsplash.com/' + UNSPLASH_UTM}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Unsplash
-    </a>
   </div>
 );
 
