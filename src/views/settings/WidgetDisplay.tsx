@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 
 import { WidgetDisplay } from '../../store/reducers/types';
-import PositionInput from './PositionInput';
 import './WidgetDisplay.css';
 
 type Props = {
@@ -12,11 +11,6 @@ type Props = {
 const WidgetDisplay: FC<Props> = ({ display, onChange }) => {
   return (
     <div className="WidgetDisplay">
-      <PositionInput
-        value={display.position}
-        onChange={position => onChange({ position })}
-      />
-
       <label>
         Size
         <br />

@@ -9,7 +9,9 @@ import {
   WidgetState,
 } from '../../store/reducers/types';
 import PluginContainer from '../shared/Plugin';
-import { DownIcon, IconButton, RemoveIcon, UpIcon, Icon } from '../shared';
+import { DownIcon, IconButton, RemoveIcon, UpIcon } from '../shared';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import Icon from './../../Icon';
 import ToggleSection from '../shared/ToggleSection';
 import WidgetDisplay from './WidgetDisplay';
 import './Widget.sass';
@@ -44,7 +46,7 @@ const Widget: FC<Props> = ({ plugin, onMoveDown, onMoveUp, onRemove }) => {
           onClick={toggleIsOpen}
           title={`${isOpen ? 'Close' : 'Edit'} widget settings`}
         >
-          <Icon name="settings" />
+          <Icon icon={faCog} />
         </IconButton>
 
         {onMoveDown && (

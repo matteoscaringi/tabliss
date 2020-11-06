@@ -3,6 +3,25 @@
   text-align: center;
 }
 
+.Logo .Revamp {
+  width: 80px;
+  height: 80px;
+  background-image: url("./logo.png");
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.Logo span {
+  display: block;
+  margin-top: 40px;
+  font-size: 8pt;
+  font-weight: 300;
+}
+
 .Logo svg {
+  display: block;
+  height: 40px;
   fill: #3498db;
 }

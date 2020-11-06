@@ -1,10 +1,12 @@
 import React, { FC, useRef, useState } from 'react';
 
-import Icon from '../../shared/Icon';
 import { Props, defaultData } from './types';
 import { buildUrl, getSearchUrl } from './utils';
-import './Search.sass';
 
+import Icon from '../../../Icon';
+import { faSistrix } from '@fortawesome/free-brands-svg-icons';
+
+import './Search.sass';
 
 const Search: FC<Props> = ({ data = defaultData }) => {
   const searchInput = useRef<HTMLInputElement>(null);
@@ -30,7 +32,7 @@ const Search: FC<Props> = ({ data = defaultData }) => {
 
   return (
     <form className={open ? 'open Search' : 'Search'} onSubmit={handleSubmit}>
-      <Icon name="search"></Icon>
+      <Icon icon={faSistrix}></Icon>
       <input
         autoFocus
         defaultValue=""

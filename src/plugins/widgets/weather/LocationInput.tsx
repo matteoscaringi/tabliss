@@ -1,7 +1,10 @@
 import React, { FC, FormEvent, useState } from 'react';
 
+
+import Icon from '../../../Icon';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCompass } from '@fortawesome/free-regular-svg-icons';
 import { useToggle } from '../../../hooks';
-import { Icon } from '../../../views/shared';
 import { geocodeLocation, getCurrentLocation } from './api';
 import { Coordinates } from './types';
 import './LocationInput.sass';
@@ -41,7 +44,7 @@ const GeocodeInput: FC<Props> = ({ onChange }) => {
         />
 
         <button type="submit" className="button--primary button--icon">
-          <Icon name="search" />
+          <Icon icon={faSearch} />
         </button>
       </div>
     </form>
@@ -94,7 +97,7 @@ const CoordinateInput: FC<Props> = ({ latitude, longitude, onChange }) => {
             className="button--primary button--icon"
             onClick={handleLocate}
           >
-            <Icon name="navigation" />
+            <Icon icon={faCompass} />
           </button>
         )}
       </div>

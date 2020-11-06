@@ -1,8 +1,6 @@
-# Tabliss
+# New Tab
 
-A pluggable New Tab web extension written in TypeScript, React and Redux.
-
-[https://tabliss.io](https://tabliss.io)
+A fork from [tabliss.io](https://tabliss.io)
 
 ## Usage
 
@@ -14,9 +12,15 @@ Install dependencies with `npm install` before running the following scripts.
 - `npm run build:firefox` Production build for Firefox web extension
 - `npm run translations` Manage translation files
 
-To develop with external services you will additionally need to signup for your own API keys
-and enter them into your `.env` file. Get started by copying the example provided `cp .env.example .env`.
+get your custom `.env` from the official [tabliss.io](https://tabliss.io) repo.
 
-## Translations
+# Changes I made.
 
-Checkout the guide to [adding translations](TRANSLATING.md).
+```
++ Shortcuts.
++ Better default settings.
++ Better search box.
++ Better backgrounds.
+- Removed all the weird plugins I do not use.
+- Accidentaly removed the whole language system, don't know how to fix 😬.
+```

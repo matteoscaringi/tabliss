@@ -1,13 +1,16 @@
+import { faSun, faMoon, faCloudRain, faCloudShowersHeavy, faWind, faSmog, faCloud, faCloudSun, faCloudMoon, faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faSnowflake } from '@fortawesome/free-regular-svg-icons';
+
 export const weatherIcons = {
-  'clear-day': 'sun',
-  'clear-night': 'moon',
-  rain: 'cloud-rain',
-  snow: 'cloud-snow',
-  sleet: 'cloud-drizzle',
-  wind: 'wind',
-  fog: 'cloud-rain',
-  cloudy: 'cloud',
-  'partly-cloudy-day': 'cloud',
-  'partly-cloudy-night': 'cloud',
-  thunderstorm: 'cloud-lightning',
+  'clear-day': faSun,
+  'clear-night': faMoon,
+  rain: faCloudShowersHeavy,
+  snow: faSnowflake,
+  sleet: faCloudRain,
+  wind: faWind,
+  fog: faSmog,
+  cloudy: faCloud,
+  'partly-cloudy-day': faCloudSun,
+  'partly-cloudy-night': faCloudMoon,
+  thunderstorm: faBolt,
 };

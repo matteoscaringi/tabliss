@@ -5,7 +5,6 @@ import { useSelector } from './store';
 import { Dashboard } from './views/dashboard';
 import { Settings } from './views/settings';
 import StoreError from './views/shared/StoreError';
-import WelcomeTo2 from './views/shared/welcomes/WelcomeTo2';
 
 const messages = defineMessages({
   pageTitle: {
@@ -29,7 +28,6 @@ const Root: FC = () => {
       <Dashboard />
       {showSettings && <Settings />}
       {storeError && <StoreError error={storeError} />}
-      <WelcomeTo2 />
     </>
   );
 };

@@ -6,6 +6,8 @@ const tablissLogo = require('./tabliss.svg');
 
 const Logo: FC = () => (
   <h1 className="Logo">
+    <div className="Revamp" />
+    <span>Forked from</span>
     <i dangerouslySetInnerHTML={{ __html: tablissLogo.default }} />
   </h1>
 );

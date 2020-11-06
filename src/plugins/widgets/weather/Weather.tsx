@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { defineMessages } from 'react-intl';
 
 import { useCachedEffect, useFormatMessages } from '../../../hooks';
-import { Icon } from '../../../views/shared';
+import Icon from '../../../Icon';
 import { getForecast } from './api';
 import { weatherIcons } from './icons';
 import { defaultData, Props } from './types';
@@ -50,7 +50,7 @@ const Weather: FC<Props> = ({
         title="Toggle weather details"
       >
         {data.name && <span>{data.name}</span>}
-        <Icon name={weatherIcons[cache.icon]} />
+        <Icon icon={weatherIcons[cache.icon]} />
         <span className="temperature">
           <span title={translated.high} className="high">
             {cache.temperatureHigh}˚

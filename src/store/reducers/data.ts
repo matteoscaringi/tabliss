@@ -21,7 +21,7 @@ export const initialState: DataState = {
     },
     {
       id: generateId(),
-      key: 'widget/greeting',
+      key: 'widget/search',
       active: true,
       display: { position: 'middleCentre' },
     },
