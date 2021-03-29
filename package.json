@@ -34,8 +34,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-persist-webextension-storage": "^1.0.2",
-    "tlds": "^1.207.0",
-    "uuid": "^7.0.3"
+    "tlds": "^1.207.0"
   },
   "devDependencies": {
     "@types/chrome": "0.0.103",

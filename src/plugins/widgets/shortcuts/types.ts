@@ -1,6 +1,3 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faApple, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { Url } from 'url';
 import { API } from '../../types';
 
 export type Shortcut = {

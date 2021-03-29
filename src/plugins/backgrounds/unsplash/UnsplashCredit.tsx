@@ -12,6 +12,14 @@ const UnsplashCredit: FC<Props> = ({ image }) => (
   <div className="credit">
     <span style={{ float: 'right' }}>{image.location_title}</span>
 
+     <a
+      href={image.image_link + '/download?force=true'}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Download
+    </a>
+    {' / '}
     <a
       href={image.image_link + UNSPLASH_UTM}
       rel="noopener noreferrer"
