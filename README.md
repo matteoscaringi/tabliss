@@ -2,6 +2,9 @@
 
 A fork from [tabliss.io](https://tabliss.io)
 
+##Requires
+- Node.js 14.x
+
 ## Usage
 
 Install dependencies with `npm install` before running the following scripts.
