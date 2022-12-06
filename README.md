@@ -9,7 +9,6 @@ A fork from [tabliss.io](https://tabliss.io)
 
 Install dependencies with `npm install` before running the following scripts.
 
-- `npm install uuid` to fix build failures.
 - `npm start` Start webpack dev server for local development at `http://localhost:8080`
 - `npm run build` Production build for web
 - `npm run build:chromium` Production build for Chrome web extension
